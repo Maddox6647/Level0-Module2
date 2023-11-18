@@ -1,12 +1,12 @@
 import random
-from tkinter import messagebox, Tk
+from tkinter import messagebox, Tk, simpledialog
 
 if __name__ == '__main__':
     window = Tk()
     window.withdraw()
 
     random_number = random.randint(1, 5)
-g
+
     print(random_number)
 
     # TODO 1) Use each value of random_number to give the user a random compliment
