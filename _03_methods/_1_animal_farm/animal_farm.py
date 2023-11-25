@@ -4,6 +4,10 @@ from PIL import Image, ImageTk
 from playsound import playsound
 
 window = None
+#
+
+def show_image(param):
+    pass
 
 
 def animals():
@@ -13,10 +17,29 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
+    for i in range(10):
+        animals = simpledialog.askstring(title='h', prompt='would you like, cow, duck, dog, cat, or llama')
+        if animals == 'cow':
+            show_image('cow.jpg')
+            playsound('moo.wav')
+        if animals == 'duck':
+            show_image('duck.jpg')
+            playsound('quack.wav')
+        if animals == 'dog':
+            show_image('dog.jpg')
+            playsound('woof.wav')
+        if animals == 'cat':
+            show_image('cat.jpg')
+            playsound('meow.wav')
+        if animals == 'llama':
+            show_image('llama.jpg')
+            playsound('llama.wav')
 
-    # TODO 2. Make it so that the user can keep entering new animals.
+        # TODO 2. Make it so that the user can keep entering new animals.
 
-    # TODO 3. If the user enters 'exit', stop the program
+        # TODO 3. If the user enters 'exit', stop the program
+        if animals == 'exit':
+            window.done()
 
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
@@ -26,7 +49,7 @@ def show_image(filename=None):
         image = Image.open(filename)
     except FileNotFoundError as fnf:
         print("ERROR: Unable to find file " + filename)
-        return
+
 
     # Put the image on the Tk window used by simpledialog so that when the
     # window with the image is closed, the interpreter moves to the next
