@@ -3,22 +3,27 @@ import math
 # that jumps to new location each time you click on it.
  
 # 1. Create three variables to represent the x, y, and
-# size of the ellipse
-              
+# size of the ellipse.
+x = 100
+y = 100
+s = 200
+
+
+
 def setup():
     # 2. Set the size of your sketch using the size function
     # size(width, height)
-    
+    size(500, 500)
     pass
      
 def draw():
     # 3. Set the background color of your sketch
-
+    background(255, 255, 255)
     # 4. Draw an ellipse using the variables created at the top
     # of the sketch for the location and size of your ellipse. 
     # Make sure it fits in the window. Change the variables
     # if it does not.
-    
+    ellipse(x, y, s, s)
     pass
 
 # This method gets called automatically when you press the mouse
