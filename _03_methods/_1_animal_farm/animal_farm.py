@@ -17,7 +17,7 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-    for i in range(10):
+    for i in range(10000000000000000000):
         animal = simpledialog.askstring(title='h', prompt='would you like, cow, duck, dog, cat, or llama')
         if animal == 'cow':
             show_image('cow.jpg')

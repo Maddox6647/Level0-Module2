@@ -37,13 +37,16 @@ def mousePressed():
     # Set the value of your distance variable to the value returned
     # by the get_distance_from_mouse function. You will need to pass the
     # x and y location of your ellipse to this method.
-          
-
+    
+    distance = get_distance_from_mouse(x, y)
+    if distance < s/2:
+        x = random(500)
+        y = random(500)
     # 7. Use an if statement to check if your distance variable is
     # less than the radius of the ellipse. If it is, set new values for
     # x AND y for the ellipse, for a new random location on the window
     # Hint: Use code like this, x = random(width)
-
+    
     
 # ========  This function gives you the number of pixels between =========
 #                    between the mouse and the x,y point 
