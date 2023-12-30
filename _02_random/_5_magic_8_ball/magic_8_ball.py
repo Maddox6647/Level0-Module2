@@ -8,12 +8,13 @@ if __name__ == '__main__':
     # TODO Get the user to enter a question for the 8 ball to answer
 
     # Make a variable and initialize it to a random number between 0 and 3
-    bobby1545 = random.randint(0,3)
-
+    bobby1545 = random.randint(0, 3)
+    bob = simpledialog.askstring(title='shrek', prompt='ask me something')
     # If the random number is 0
+
     if bobby1545 == 0:
-        bob = simpledialog.askstring(title='shrek', prompt='ask me something')
         messagebox.showinfo(title='f', message='yes')
+
         # tell the user "Yes"
 
     # If the random number is 1
@@ -28,5 +29,5 @@ if __name__ == '__main__':
 
     # If the random number is 3
     if bobby1545 == 3:
-        messagebox.showinfo(title='', message='SHUT UP!!!')
+        messagebox.showinfo(title='', message='SHUT UP YOU LITTLE RASCAL, OR YOU WILL FEEL THE WRATH OF MY POWER!!!')
         # write your own answer
